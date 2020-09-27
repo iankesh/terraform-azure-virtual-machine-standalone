@@ -1,27 +1,27 @@
 # GENERAL
 variable "env" {
   description = "(Required) name of the resource group"
-  default = "dev"
+  default     = "dev"
 }
 
 variable "location" {
   description = "(Required) location where this resource has to be created"
-  default = "westeurope"
+  default     = "westeurope"
 }
 
 variable "team_tag" {
   description = "(Optional) tag a team"
-  default = "DevOps"
+  default     = "DevOps"
 }
 
 variable "creator" {
   description = "(Optional) tag a creator"
-  default =   "iankesh"
+  default     = "iankesh"
 }
 
 variable "base_name" {
   description = "(Required) name of the resource group"
-  default = "cloud"
+  default     = "cloud"
 }
 
 # RESOURCE GROUP
@@ -88,7 +88,7 @@ variable "allocation" {
   default     = "Static"
 }
 
-variable "ip_version" { 
+variable "ip_version" {
   description = "(Optional) The Ip version. Possible values are IPv4 and IPv6"
   default     = "IPv4"
 }

@@ -1,55 +1,55 @@
 # GENERAL
 output "az_location" {
   description = "The location of resources being created"
-  value = var.location
+  value       = var.location
 }
 
 # RESOURCE GROUP
 output "az_rg_id" {
   description = "The Respurce ID of the Resource Group"
-  value = azurerm_resource_group.az_rg.id
+  value       = azurerm_resource_group.az_rg.id
 }
 
 output "az_rg_name" {
   description = "The Respurce name of the Resource Group"
-  value = azurerm_resource_group.az_rg.name
+  value       = azurerm_resource_group.az_rg.name
 }
 
 # VIRTUAL NETWORK
 output "az_vnet_id" {
   description = "The id of the newly created vNet"
-  value = azurerm_virtual_network.az_vnet.id
+  value       = azurerm_virtual_network.az_vnet.id
 }
 
 output "az_vnet_name" {
   description = "The Name of the newly created vNet"
-  value = azurerm_virtual_network.az_vnet.name
+  value       = azurerm_virtual_network.az_vnet.name
 }
 
 output "az_vnet_location" {
   description = "The location of the newly created vNet"
-  value = azurerm_virtual_network.az_vnet.location
+  value       = azurerm_virtual_network.az_vnet.location
 }
 
 output "az_vnet_address_space" {
   description = "The address space of the newly created vNet"
-  value = azurerm_virtual_network.az_vnet.address_space
+  value       = azurerm_virtual_network.az_vnet.address_space
 }
 
 # SUBNET
 output "az_subnet_id" {
   description = "The id of the newly created subnet"
-  value = azurerm_subnet.az_subnet.id
+  value       = azurerm_subnet.az_subnet.id
 }
 
 output "az_subnet_name" {
   description = "The Name of the newly created subnet"
-  value = azurerm_subnet.az_subnet.name
+  value       = azurerm_subnet.az_subnet.name
 }
 
 output "az_subnet_address_prefix" {
   description = "The address space of the newly created subnet"
-  value = azurerm_subnet.az_subnet.address_prefixes
+  value       = azurerm_subnet.az_subnet.address_prefixes
 }
 
 # SECURITY GROUP
